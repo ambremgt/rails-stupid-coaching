@@ -1,13 +1,19 @@
+<div class="container">
 <h1>Stupid Coaching</h1>
 
-<h2>Questions:</h2>
-<p><%= params[:question].capitalize %></p>
-<p><%= '-You' %></p>
+  <div>
+    <h2>Questions:</h2>
+    <p><%= params[:question].capitalize %></p>
+    <p><%= '-You' %></p>
+  </div>
 
-<h2>Answer:</h2>
-<p><%= @answer %></p>
-<p><%= '-Your coach' %></p>
+  <div class="answer">
+    <h2 >Answer:</h2>
+    <p><%= @answer %></p>
+    <p><%= '-Your coach' %></p>
+  </div>
 
 <%= link_to "Ask a new question", "/ask" %>
+</div>
 
 
